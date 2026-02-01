@@ -65,7 +65,24 @@
             /* Optional: Add a slight transparency to blend with the paper background */
             opacity: 0.9;
         }
-        
+        .image-button {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 30px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .image-button img {
+            width: 90px; /* Adjust the size of your button image here */
+            height: auto;
+            display: block;
+        }
+
+        /* This makes the image grow slightly and fade when you hover */
+        .image-button:hover {
+            transform: scale(1.05); 
+            opacity: 0.8;
+        }
     </style>
 </head>
 
@@ -75,7 +92,11 @@
     <p>I am not totally sure what I am. I am human enough and I am lost; there’s no doubt about that. I am confused, I think. That’s also something that is not completely clear to me yet. Still, I hold on to the idea that I will figure it out at some point.</p>
     <img src="Asset1.png" width="70">
 
-    <p>Like my own mind this page is a work in progress. Soon it will be fuller and more complex and potentially set in stone, but right now that isn't the case. What will spill on it? Perhaps my thoughts; maybe pieces of pasts that linger into the now. I wonder! In the meantime, send me an email or a letter :)  </p>
+    <p>Like my own mind this page is a work in progress. Soon it will be fuller and more complex and potentially set in stone, but right now that isn't the case. What will spill on it? Perhaps my thoughts; maybe pieces of pasts that linger into the now. I wonder! Probably I will add projects that reflect positively on me. I might also share some unfinished work, or some notes. This is all very exciting.  </p>
+    <a href="mailto:ninalitsios@gmail.com" class="image-button">
+    <img src="Asset4.png" alt="Contact Nina">
+</a>
+    
     <footer>
        Utrecht, 1st of February 2026
 
