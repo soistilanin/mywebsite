@@ -3,19 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nina Litsios</title>
+    
+    <link rel="stylesheet" href="https://use.typekit.net/vrk6ane.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff; /* Clean white background */
+            color: #000000;
+            
+            /* Apply Adobe Font */
+            font-family: "padyakke-expanded-one", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            
+            /* Smoothing for Mac Retina displays */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            /* Fluid font size: grows with the screen */
+            font-size: clamp(2.5rem, 10vw, 6rem); 
+            margin: 0;
+            line-height: 1.1;
+            text-transform: uppercase;
+            /* Optional: Subtle letter spacing for that designer look */
+            letter-spacing: -0.02em; 
+        }
+
+        p {
+            /* Simple sans-serif for the subtitle so it doesn't fight the header */
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.3em;
+            margin-top: 20px;
+            opacity: 0.6;
+        }
+
+        /* Fun interaction: The name fades slightly when hovered */
+        h1:hover {
+            opacity: 0.7;
+            transition: opacity 0.4s ease;
+            cursor: default;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Nina Litsios</h1>
-    </header>
-    <main>
-        <p> finally! it's online!
-        </p>
-    </main>
 
-    <footer>
-        <p>:-)</p>
-    </footer>
+    <div class="container">
+        <h1>Nina Litsios</h1>
+        <p>test test I think it is working!</p>
+    </div>
+
 </body>
 </html>
