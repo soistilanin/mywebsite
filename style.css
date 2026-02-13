@@ -36,8 +36,20 @@ h1 {
 
 h2 { 
     font-family: "bookman-jf-pro", serif;
-font-weight: 400;
-font-style: normal; }
+    font-weight: 400;
+    font-style: normal; }
+
+main h3:first-child {
+    margin-top: 60px; /* Adjust this to the gap you want at the top of articles */
+    margin-bottom: 20px; 
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-family: "ocr-a", monospace; 
+    letter-spacing: 0.15em;
+    color: #f54949;
+}
 
 p {
     font-family: "ltc-kennerley", serif;
@@ -97,6 +109,35 @@ nav {
     height: auto;
 }
 
+.nav-img-btn:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* Hide the active image by default */
+.nav-img-btn .img-active {
+    display: none;
+}
+
+/* When hovering: Hide default, Show active */
+.nav-img-btn:hover .img-default {
+    display: none;
+}
+
+.nav-img-btn:hover .img-active {
+    display: block;
+}
+
+/* --- OPTIONAL: PERSISTENT ACTIVE STATE --- */
+/* If you add class="active" to the link of the current page */
+.nav-img-btn.active .img-default {
+    display: none;
+}
+
+.nav-img-btn.active .img-active {
+    display: block;
+}
+
+/* Keep your existing hover scale effect */
 .nav-img-btn:hover {
     transform: scale(1.1) translateY(-5px);
 }
